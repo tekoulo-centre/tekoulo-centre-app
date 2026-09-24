@@ -1132,7 +1132,7 @@
           <ul class="login-points">
             <li>🔒 Accès réservé au personnel autorisé</li>
             <li>📶 Fonctionne aussi hors connexion</li>
-            <li>🔄 Synchronisation avec le serveur central</li>
+            <li>🔄 Synchronisation avec Google Drive</li>
           </ul>
         </aside>
         <section class="login-body login-form">
@@ -3974,12 +3974,12 @@ function renderGuide(container){
 
     <div class="guide-chapter" id="g1">
       <h2>1. Introduction</h2>
-      <p>Ce guide accompagne l'utilisateur depuis l'ouverture de l'application jusqu'à sa fermeture, en couvrant l'ensemble des fonctionnalités : choix de l'espace et connexion, navigation, saisie des données, notes et bulletins, emplois du temps, finances, impression de documents, export, sauvegarde, paramétrage et serveur central.</p>
+      <p>Ce guide accompagne l'utilisateur depuis l'ouverture de l'application jusqu'à sa fermeture, en couvrant l'ensemble des fonctionnalités : choix de l'espace et connexion, navigation, saisie des données, notes et bulletins, emplois du temps, finances, impression de documents, export, sauvegarde, paramétrage et synchronisation Google Drive.</p>
       <p><b>À qui s'adresse ce guide ?</b> À toute personne chargée d'administrer ou d'utiliser la base de données de l'établissement : direction de chaque cycle, secrétariat, comptabilité, surveillance générale, enseignants, ou toute personne autorisée à y accéder.</p>
       <h3>Qu'est-ce que cette application ?</h3>
       <p>Il s'agit d'une application de gestion scolaire qui fonctionne dans un navigateur internet. Elle couvre les <b>quatre cycles</b> de l'établissement — <b>Élémentaire</b>, <b>Primaire</b>, <b>Collège</b> et <b>Lycée</b> — chacun disposant de son propre espace : page de connexion, menu, tableau de bord et formulaires.</p>
-      <p>Les données (élèves, personnel, notes, finances, discipline, etc.) sont enregistrées <b>localement dans le navigateur</b> de l'ordinateur ou du téléphone utilisé, ce qui permet de travailler sans connexion internet. L'application peut en plus être reliée à un <b>serveur central</b> (chapitre 10 bis) pour partager les mêmes données entre plusieurs appareils.</p>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Important</b>Tant que l'application n'est pas reliée au serveur central, les données ne se trouvent que dans le navigateur. Il est alors indispensable d'effectuer des sauvegardes régulières (voir chapitre 9) : si le cache du navigateur est vidé, ou si l'on change d'ordinateur, les données non sauvegardées peuvent être perdues.</div>
+      <p>Les données (élèves, personnel, notes, finances, discipline, etc.) sont enregistrées <b>localement dans le navigateur</b> de l'ordinateur ou du téléphone utilisé, ce qui permet de travailler sans connexion internet. L'application peut en plus être reliée à un <b>dossier Google Drive partagé</b> (chapitre 10 bis) pour partager les mêmes données entre plusieurs appareils.</p>
+      <div class="guide-callout attention"><b class="gc-label">⚠️ Important</b>Tant que l'application n'est pas reliée à Google Drive, les données ne se trouvent que dans le navigateur. Il est alors indispensable d'effectuer des sauvegardes régulières (voir chapitre 9) : si le cache du navigateur est vidé, ou si l'on change d'ordinateur, les données non sauvegardées peuvent être perdues.</div>
     </div>
 
     <div class="guide-chapter" id="g2">
@@ -4028,7 +4028,7 @@ function renderGuide(container){
       <ul>
         <li><b>Titre de la page et fil d'Ariane :</b> indiquent le module ouvert et son groupe.</li>
         <li><b>Date du jour.</b></li>
-        <li><b>🔄 Synchroniser :</b> force une synchronisation avec le serveur central (chapitre 10 bis.8).</li>
+        <li><b>🔄 Synchroniser :</b> connecte ou force une synchronisation avec Google Drive (chapitre 10 bis.5).</li>
         <li><b>🌐 DGECS Écoles :</b> ouvre le site www.dgecsecoles.com dans un nouvel onglet.</li>
         <li><b>🔗 Fichier lié :</b> crée ou ouvre le fichier de sauvegarde automatique (chapitre 9.1).</li>
         <li><b>⭳ Sauvegarder / ⭱ Restaurer :</b> téléchargent ou rechargent une sauvegarde complète (chapitre 9.2).</li>
@@ -4238,7 +4238,7 @@ function renderGuide(container){
       <p>Ces informations alimentent automatiquement les en-têtes et les blocs de signature des documents imprimés (chapitre 8.3).</p>
       <div class="guide-callout info"><b class="gc-label">ℹ️ Budget initial</b>Le budget n'est plus un champ unique des Paramètres : chaque espace a son propre budget, saisi dans son tableau de bord (chapitre 13.2). Le budget de l'établissement est la somme des quatre cycles.</div>
       <div class="guide-callout info"><b class="gc-label">ℹ️ Changer l'adresse e-mail</b>Pour changer l'adresse e-mail de l'école : ouvrez « Paramètres » → section « Informations de l'établissement » → champ « E-mail de l'école (pour l'envoi des sauvegardes) » → remplacez l'adresse → cliquez sur « Enregistrer les informations ». Le changement s'applique aussitôt aux prochaines sauvegardes envoyées par e-mail (chapitre 9.3).</div>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Ne pas confondre avec les autres adresses e-mail</b>L'e-mail utilisé pour se connecter à Google Drive (chapitre 9.1) se change dans l'application Google Drive elle-même, et l'e-mail du compte d'hébergement du serveur central se change uniquement auprès de la personne technique (chapitre 10 bis.13). Aucun des deux ne se modifie dans les Paramètres de l'application.</div>
+      <div class="guide-callout attention"><b class="gc-label">⚠️ Ne pas confondre avec les autres adresses e-mail</b>Le compte Google utilisé pour se connecter à Google Drive (chapitre 10 bis.1) se change dans l'application Google Drive elle-même, jamais dans les Paramètres de l'application. L'e-mail utilisé pour la sauvegarde liée à un fichier local (chapitre 9.1) est un troisième réglage, indépendant des deux autres.</div>
       <h3>10.2 Type d'établissement : Public ou Privé</h3>
       <ul>
         <li><b>Privé :</b> active « Gestion des frais de scolarité » et masque les modules APEAE et Bureau de l'APEAE.</li>
@@ -4270,7 +4270,7 @@ function renderGuide(container){
           <tr><td>Enseignant, Professeur</td><td>Notes &amp; bulletins et les trois emplois du temps</td></tr>
         </tbody>
       </table>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Comptes locaux</b>Les comptes créés ici sont enregistrés sur l'appareil : ils restreignent l'accès aux modules mais ne sont pas reconnus par le serveur central. Pour la synchronisation multi-appareils, le même identifiant doit aussi exister sur le serveur (chapitre 10 bis.7).</div>
+      <div class="guide-callout attention"><b class="gc-label">⚠️ Comptes locaux et Google Drive</b>Les comptes créés ici (identifiant/mot de passe) restreignent l'accès aux modules mais ne servent pas à la synchronisation : ils sont enregistrés sur l'appareil. Pour synchroniser les données entre appareils, chaque personne doit en plus se connecter avec son propre compte Google via le bouton « 🔗 Connecter Google Drive » (chapitre 10 bis) — indépendamment du compte local utilisé.</div>
       <div class="guide-callout info"><b class="gc-label">ℹ️ Sans identifiant</b>Si le champ identifiant est laissé vide à la connexion, le mot de passe administrateur (chapitre 10.5) donne un accès complet à l'espace choisi.</div>
       <h3>10.8 Cycles et niveaux, barème de notation</h3>
       <p>Les sections « Cycles et niveaux » et « Barème de notation par niveau » sont informatives : elles présentent les niveaux de chaque cycle et le barème appliqué (chapitres 11 et 12). Si des élèves sont encore enregistrés au niveau « MATERNELLE » (ancien niveau), un encadré propose de les convertir en Petite, Moyenne ou Grande section.</p>
@@ -4281,195 +4281,94 @@ function renderGuide(container){
     </div>
 
     <div class="guide-chapter" id="g10b">
-      <h2>10 bis. Serveur central et sauvegarde en ligne</h2>
-      <p>Depuis septembre 2026, l'application peut se connecter à un serveur central en plus du stockage local du navigateur. Cette connexion permet à plusieurs personnes, sur des appareils différents, de partager les mêmes données (élèves, notes, frais, et tous les autres modules), avec une seule base de données commune comme référence.</p>
+      <h2>10 bis. Synchronisation avec Google Drive</h2>
+      <p>Depuis septembre 2026, l'application peut se connecter à un dossier Google Drive partagé, en plus du stockage local du navigateur. Cette connexion permet à plusieurs personnes, sur des appareils différents, de partager les mêmes données (élèves, notes, frais, et tous les autres modules), avec ce dossier Drive comme référence commune. L'ancien serveur central (Render) n'est plus utilisé.</p>
 
-      <h3>10 bis.1 Se connecter au mode serveur</h3>
-      <p>À l'écran de connexion, un identifiant et un mot de passe sont demandés. Il s'agit d'un compte distinct du mot de passe local vu au chapitre 10.5. Les identifiants sont attribués par la personne technique ou la direction, selon le rôle de chacun (voir le tableau ci-dessous).</p>
-      <table class="guide-table">
-        <thead><tr><th>Rôle</th><th>Accès habituel</th></tr></thead>
-        <tbody>
-          <tr><td>direction</td><td>Accès complet à tous les modules, gestion des comptes, sauvegarde de la base</td></tr>
-          <tr><td>secretariat</td><td>Élèves et informations administratives</td></tr>
-          <tr><td>comptabilite</td><td>Frais de scolarité et paiements</td></tr>
-          <tr><td>enseignant</td><td>Notes de ses classes</td></tr>
-          <tr><td>consultation</td><td>Lecture seule sur les modules autorisés, aucune modification possible</td></tr>
-        </tbody>
-      </table>
-      <div class="guide-callout info"><b class="gc-label">ℹ️ Un compte par personne</b>Chaque personne devrait disposer de son propre compte plutôt que de partager un compte unique (par exemple celui de la direction). Cela permet de savoir qui a fait quelle modification, et de limiter les conséquences si un mot de passe est un jour compromis. Pour créer un nouveau compte, contactez la personne technique en charge du serveur.</div>
+      <h3>10 bis.1 Se connecter à Google Drive</h3>
+      <ol>
+        <li>Sur le tableau de bord, repérer le bouton <b>« 🔗 Connecter Google Drive »</b> (à côté du bouton « Synchroniser » habituel).</li>
+        <li>Appuyer dessus : une fenêtre Google s'ouvre, demandant de choisir un compte Google puis d'autoriser l'accès à Drive.</li>
+        <li>Choisir le compte Google qui a été autorisé par le Fondateur (voir 10 bis.8 pour donner l'accès à une nouvelle personne).</li>
+        <li>Un écran « Google n'a pas validé cette application » peut apparaître tant que l'application est en phase de test : c'est normal, appuyer sur <b>« Continuer »</b> pour poursuivre.</li>
+        <li>Accepter les autorisations demandées. Le bouton devient alors <b>« 🔄 Synchroniser »</b>, et un message <b>« ✅ Connecté à Google Drive »</b> s'affiche.</li>
+      </ol>
+      <div class="guide-callout info"><b class="gc-label">ℹ️ Un compte Google par personne</b>Chaque personne (Directeur, Principal, Proviseur, Comptable…) se connecte avec son propre compte Google, préalablement autorisé par le Fondateur. Ce compte Google ne remplace pas l'identifiant/mot de passe habituel de l'application (chapitre 10.7) : les deux sont indépendants et servent chacun à leur usage — le compte de l'application pour restreindre l'accès aux modules, le compte Google uniquement pour la synchronisation des données.</div>
 
       <h3>10 bis.2 Utiliser l'application sur un nouvel appareil</h3>
       <ol>
-        <li>Copier le fichier de l'application (envoi par e-mail, clé USB, Google Drive, WhatsApp, peu importe le moyen) sur le nouvel appareil.</li>
-        <li>Ouvrir ce fichier normalement dans un navigateur (Chrome, Edge, Safari).</li>
-        <li>Se connecter avec un identifiant et mot de passe valides.</li>
+        <li>Ouvrir l'adresse de l'application dans un navigateur (Chrome, Edge, Safari) sur le nouvel appareil — aucun fichier à copier, puisque l'application est hébergée en ligne.</li>
+        <li>Se connecter avec un identifiant/mot de passe habituel (chapitre 10.7), ou le mot de passe administrateur.</li>
+        <li>Appuyer sur « 🔗 Connecter Google Drive » et choisir le même compte Google que sur les autres appareils.</li>
       </ol>
-      <p>Aucune donnée n'a besoin d'être transférée avec le fichier : dès la connexion, les données déjà saisies apparaissent automatiquement, puisque l'application se connecte au même serveur central. Le fichier ne contient que le programme, jamais les données elles-mêmes.</p>
+      <p>Dès la connexion à Google Drive, les données déjà saisies par les autres apparaissent après une synchronisation (bouton « 🔄 Synchroniser », ou automatiquement — voir 10 bis.5).</p>
 
       <h3>10 bis.3 Fonctionnement sans connexion internet</h3>
       <ul>
-        <li>Si l'application est déjà ouverte quand le réseau coupe : le travail continue normalement, rien n'est perdu, et la synchronisation reprend automatiquement au retour du réseau.</li>
-        <li>Si l'application est fermée puis rouverte sans réseau : la connexion bascule sur le mot de passe local de secours (chapitre 10.5), différent du mot de passe du compte serveur.</li>
-        <li>Sans réseau prolongé, le travail reste possible sur l'appareil utilisé, mais les autres appareils ne verront les changements qu'au retour de la connexion.</li>
+        <li>L'application fonctionne entièrement hors connexion pour la saisie : rien n'est perdu, tout reste enregistré sur l'appareil.</li>
+        <li>Tant que Google Drive n'est pas connecté (ou hors réseau), les modifications restent « en attente » et se synchronisent automatiquement dès que la connexion à Google Drive est rétablie.</li>
+        <li>Sans réseau prolongé, le travail reste possible sur l'appareil utilisé, mais les autres appareils ne verront les changements qu'au retour de la connexion et d'une synchronisation.</li>
       </ul>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Premier réflexe en cas de blocage</b>Si l'application affiche « Serveur injoignable », vérifiez toujours en premier que l'appareil est bien connecté à internet (par exemple en essayant d'ouvrir un autre site) avant de chercher une autre cause.</div>
 
-      <h3>10 bis.4 Fonctionnement du serveur en ligne (à titre informatif)</h3>
-      <p>Le serveur central tourne en permanence sur un service d'hébergement en ligne. Sur la formule actuellement utilisée, le serveur peut se mettre en veille après une période sans activité : la première connexion après une pause peut alors prendre 30 à 50 secondes avant de répondre. Ce n'est pas une panne, seulement le temps que le serveur se réactive.</p>
+      <h3>10 bis.4 Sauvegarde des données</h3>
+      <p>Les données synchronisées sont automatiquement conservées dans le dossier Google Drive de l'école (un fichier <code>.json</code> par module, par exemple <code>tekoulo__eleves__2026_2027.json</code>) — ce dossier constitue déjà une sauvegarde en ligne à jour. En complément, il reste recommandé d'utiliser régulièrement l'export local (chapitre 9) pour conserver une copie indépendante, par exemple avant une période chargée (bulletins, inscriptions).</p>
 
-      <h3>10 bis.5 Sauvegarde de la base centrale</h3>
-      <p>En plus de l'export local (chapitre 9), une sauvegarde complète de la base centrale peut être réalisée par la personne disposant du compte direction, à l'aide d'un outil dédié fourni par la personne technique :</p>
-      <ol>
-        <li>Ouvrir l'outil de sauvegarde fourni.</li>
-        <li>Entrer l'identifiant direction et son mot de passe.</li>
-        <li>Appuyer sur le bouton de téléchargement de la sauvegarde.</li>
-        <li>Conserver le fichier obtenu dans un endroit différent de l'appareil habituel (e-mail envoyé à soi-même, Google Drive).</li>
-      </ol>
-      <p>Il est recommandé de réaliser cette sauvegarde régulièrement, par exemple chaque semaine, ou avant toute période particulièrement chargée (bulletins, inscriptions).</p>
+      <h3>10 bis.5 Synchronisation automatique et manuelle</h3>
+      <ul>
+        <li><b>Automatique :</b> une fois Google Drive connecté, les données se synchronisent en arrière-plan à intervalles réguliers.</li>
+        <li><b>Manuelle :</b> le bouton « 🔄 Synchroniser » du tableau de bord force une vérification immédiate — il affiche « ✅ Réussi » avec l'heure, ou un message d'échec expliquant la cause (voir 10 bis.10).</li>
+        <li><b>Hors connexion :</b> les modifications restent en attente et repartent automatiquement dès que la connexion à Google Drive est rétablie.</li>
+      </ul>
+      <p>Chaque « collection » de données (élèves, notes, personnel, frais, etc.) est enregistrée comme un fichier JSON séparé dans le dossier Drive partagé. En cas de modification simultanée de la même fiche par deux personnes sur deux appareils différents, la version la plus récente est automatiquement conservée, sans demande de confirmation manuelle pour l'instant.</p>
 
       <h3>10 bis.6 Sécurité et bonnes pratiques</h3>
       <ul>
-        <li>Ne jamais partager un mot de passe (serveur ou local) par un moyen non sécurisé, comme une capture d'écran envoyée publiquement ou un message non chiffré.</li>
-        <li>En cas de doute sur la confidentialité d'un mot de passe, le faire changer sans attendre par la personne technique.</li>
-        <li>En cas de modification simultanée de la même fiche par deux personnes sur deux appareils différents, la version la plus récente est automatiquement conservée, sans demande de confirmation manuelle pour l'instant.</li>
+        <li>Ne jamais partager son mot de passe de connexion à l'application, ni les identifiants de son compte Google, par un moyen non sécurisé (capture d'écran publique, message non chiffré).</li>
+        <li>Seules les personnes explicitement autorisées par le Fondateur (compte Google ajouté comme utilisateur test, et dossier Drive partagé avec elles) peuvent synchroniser des données.</li>
+        <li>En cas de doute sur la sécurité d'un compte Google utilisé pour l'application, en informer le Fondateur, qui peut retirer l'accès au dossier Drive à tout moment depuis Google Drive.</li>
       </ul>
 
-      <h3>10 bis.7 Questions fréquentes sur le mode serveur</h3>
-      <p><b>Le mot de passe serveur est-il le même que celui des Paramètres (chapitre 10.5) ?</b> Non, ce sont deux systèmes distincts : le mot de passe des Paramètres ne sert que de secours local en l'absence de réseau.</p>
-      <p><b>Puis-je changer le mot de passe de mon compte serveur moi-même ?</b> Pas encore directement depuis l'application ; cette opération passe pour l'instant par la personne technique en charge du serveur.</p>
-      <p><b>Que faire si la sauvegarde en ligne échoue ?</b> Vérifier d'abord la connexion internet de l'appareil utilisé, puis contacter la personne technique si le problème persiste.</p>
-      <p><b>Le bouton « 🔄 Synchroniser » affiche « Non connecté au serveur » (ou un message équivalent), que faire ?</b> Ce message a deux causes possibles, maintenant distinguées automatiquement par le bouton lui-même :</p>
-      <ul>
-        <li><b>« Serveur en ligne, mais ce compte ne s'y est pas connecté »</b> — le plus fréquent. Vous êtes connecté avec un compte créé dans <b>Paramètres → Comptes de connexion par rôle</b> (ou avec le mot de passe administrateur local), qui fonctionne très bien pour restreindre l'accès aux modules, mais qui n'existe pas dans la base du serveur central. Solution : demander à la personne technique de créer ce même identifiant dans <code>admin.html</code> (chapitre 10 bis.9), puis se reconnecter avec.</li>
-        <li><b>« Serveur central injoignable »</b> — le serveur lui-même ne répond pas : pas de réseau sur l'appareil, coupure internet, ou serveur en veille après une période d'inactivité (chapitre 10 bis.4, jusqu'à environ une minute de délai). Solution : vérifier la connexion internet, patienter une à deux minutes, puis réessayer. Si le problème persiste au-delà de quelques minutes avec un réseau qui fonctionne par ailleurs, le serveur est probablement en panne côté hébergement — contacter la personne technique (chapitre 10 bis.13).</li>
-      </ul>
+      <h3>10 bis.7 Les rôles disponibles</h3>
+      <p>Les rôles et les modules accessibles à chacun (Fondateur, Directeur, Principal, Proviseur, Comptable, Enseignant, etc.) sont décrits au chapitre 10.7 — la connexion à Google Drive n'a pas d'effet sur ces droits : elle ne fait que synchroniser les données déjà autorisées pour le rôle de la personne connectée.</p>
 
-      <h3>10 bis.8 Détails techniques de la synchronisation</h3>
-      <ul>
-        <li><b>Automatique :</b> toutes les 20 secondes, l'application vérifie s'il y a du nouveau depuis un autre appareil. Un message apparaît si c'est le cas (« Nouvelles données reçues… actualisez la page »).</li>
-        <li><b>Manuelle :</b> un bouton « 🔄 Synchroniser » est disponible en haut du tableau de bord — utile pour forcer une vérification immédiate sans attendre. Il affiche « À jour » ou « Nouvelles données reçues » avec l'heure — ou, si aucun jeton de connexion serveur n'est disponible, l'un des deux messages de diagnostic du chapitre 10 bis.7 ci-dessus.</li>
-        <li><b>Hors connexion :</b> l'application continue de fonctionner normalement ; tout se synchronise automatiquement dès que le réseau revient (file d'attente hors-ligne).</li>
-      </ul>
-      <p>Le backend central est hébergé en ligne (<code>tekoulo-api.onrender.com</code>), avec une base de données PostgreSQL dédiée. Une page d'administration des comptes, accessible à la même adresse (<code>/admin.html</code>), permet à la personne technique ou à la direction de gérer les comptes de connexion.</p>
-      <div class="guide-callout info"><b class="gc-label">ℹ️ Page admin.html</b>Cette page propose une section « Connexion » (avec un compte existant), une section « Créer un nouveau compte » (une fois connecté), une section « Comptes existants » listant tous les comptes créés avec leur rôle, ainsi qu'une section « Diagnostic » permettant de vérifier directement sur le serveur le contenu d'un module en cas de doute sur la synchronisation (en tapant une clé du type <code>programmeinfo__2025-2026</code>, soit le nom du module suivi de l'année scolaire exacte affichée dans l'application). Deux sections de dépannage y sont également disponibles, à n'utiliser qu'en cas de problème : « 1. Initialiser la base » (recrée les tables si besoin, sans danger, ne supprime rien) et « 2. Dépannage compte chef d'établissement » (recrée ou réinitialise le mot de passe du compte chef d'établissement si perdu, protégé par un secret connu de la personne technique).</div>
-
-      <h3>10 bis.9 Les rôles disponibles et leurs identifiants</h3>
-      <table class="guide-table">
-        <thead><tr><th>Rôle</th><th>Identifiant standard</th></tr></thead>
-        <tbody>
-          <tr><td>Chef d'établissement</td><td><code>chef1</code></td></tr>
-          <tr><td>Directeur des études</td><td><code>directeur1</code></td></tr>
-          <tr><td>Comptable</td><td><code>comptable1</code></td></tr>
-          <tr><td>Chargé à l'orientation</td><td><code>orientation1</code></td></tr>
-          <tr><td>Enseignant — Mathématiques</td><td><code>mathematiques</code></td></tr>
-          <tr><td>Enseignant — Français</td><td><code>francais</code></td></tr>
-          <tr><td>Enseignant — Physique</td><td><code>physique</code></td></tr>
-          <tr><td>Enseignant — Chimie</td><td><code>chimie</code></td></tr>
-          <tr><td>Enseignant — Biologie</td><td><code>biologie</code></td></tr>
-          <tr><td>Enseignant — Géographie</td><td><code>geographie</code></td></tr>
-          <tr><td>Enseignant — Histoire</td><td><code>histoire</code></td></tr>
-          <tr><td>Enseignant — Anglais</td><td><code>anglais</code></td></tr>
-          <tr><td>Enseignant — Instruction civique et morale</td><td><code>ecm</code></td></tr>
-          <tr><td>Secrétaire</td><td><code>secretaire1</code></td></tr>
-          <tr><td>Bibliothécaire</td><td><code>bibliothecaire1</code></td></tr>
-          <tr><td>Surveillant général</td><td><code>surveillant1</code></td></tr>
-        </tbody>
-      </table>
-      <div class="guide-callout astuce"><b class="gc-label">💡 Pourquoi un identifiant par matière ?</b>Chaque enseignant se connecte directement avec le nom de sa matière (ex: <code>biologie</code>) au lieu d'un numéro générique — plus simple à retenir, et cohérent avec la liste des matières utilisée dans le mode « Créer un cours » de l'assistant IA (chapitre 10 ter.2). Si deux enseignants partagent la même matière, créer un second compte avec un identifiant distinct (ex: <code>biologie2</code>) depuis <code>admin.html</code>.</div>
-
-      <h3>10 bis.9 bis Créer les comptes enseignants (une fois par matière)</h3>
-      <p>Ces comptes ne sont pas créés automatiquement : il faut les créer une seule fois, un par matière réellement enseignée dans l'établissement (inutile de créer les neuf si certaines matières partagent un seul professeur ou ne sont pas encore concernées).</p>
+      <h3>10 bis.8 Donner l'accès à une nouvelle personne</h3>
+      <p>Ces deux étapes sont réservées au Fondateur (ou à la personne technique en charge du compte Google de l'école) :</p>
       <ol>
-        <li>Ouvrir <code>admin.html</code> (chapitre 10 bis.8) et se connecter avec le compte <b>Chef d'établissement</b> (<code>chef1</code>).</li>
-        <li>Dans la section « Créer un nouveau compte », pour chaque matière à activer :
-          <ul>
-            <li><b>Identifiant</b> : le nom de la matière tel qu'indiqué dans la table ci-dessus (ex: <code>biologie</code>, <code>mathematiques</code>, <code>francais</code>…).</li>
-            <li><b>Mot de passe</b> : au choix (6 caractères minimum).</li>
-            <li><b>Rôle</b> : « Enseignant ».</li>
-          </ul>
-        </li>
-        <li>Appuyer sur « Créer ce compte » — il apparaît aussitôt dans la liste « Comptes existants ».</li>
-        <li>Répéter pour chaque matière, puis transmettre l'identifiant et le mot de passe à l'enseignant concerné (en dehors de l'application, jamais dans Paramètres — voir l'avertissement de confidentialité ci-dessus).</li>
+        <li><b>Autoriser son compte Google</b> : dans Google Cloud (<code>console.cloud.google.com/auth/audience</code>), section « Utilisateurs test », ajouter l'adresse Gmail de la personne.</li>
+        <li><b>Partager le dossier Drive</b> : ouvrir le dossier de données de l'école dans Google Drive, « Partager », ajouter la même adresse Gmail avec le rôle <b>« Éditeur »</b>.</li>
       </ol>
-      <div class="guide-callout info"><b class="gc-label">ℹ️ Tant que ces comptes ne sont pas créés</b>La liste déroulante de l'écran de connexion propose déjà ces matières, mais la connexion échouera avec « Identifiants incorrects » tant que le compte correspondant n'a pas été créé dans <code>admin.html</code>.</div>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Confidentialité</b>Les identifiants/mots de passe réels doivent être conservés en dehors de l'application (jamais dans Paramètres), par exemple dans un document protégé connu uniquement de la direction.</div>
+      <p>La personne peut ensuite se connecter à l'application avec son identifiant habituel, puis appuyer sur « 🔗 Connecter Google Drive » et choisir son propre compte Google.</p>
 
-      <h3>10 bis.10 Ce qui est déjà résolu par rapport à l'audit initial</h3>
-      <table class="guide-table">
-        <thead><tr><th>Problème initial</th><th>État</th></tr></thead>
-        <tbody>
-          <tr><td>Pas de base centrale</td><td>✅ PostgreSQL central en ligne</td></tr>
-          <tr><td>Mot de passe en clair</td><td>✅ bcrypt + sessions JWT</td></tr>
-          <tr><td>Pas de synchronisation réelle</td><td>✅ automatique (20 s) + bouton manuel + file d'attente hors-ligne</td></tr>
-          <tr><td>Comptes uniques par rôle</td><td>✅ un compte par personne, gérés facilement via <code>admin.html</code></td></tr>
-          <tr><td>Identité dupliquée (frais)</td><td>✅ référence par <code>eleve_id</code></td></tr>
-          <tr><td>Calcul de frais fragile</td><td>✅ formule adaptative (12/10/9/6/5/1/0 mois)</td></tr>
-          <tr><td>Pas d'historique de paiement</td><td>✅ journal complet (reçu, mode, caissier, annulation tracée)</td></tr>
-          <tr><td>Moyenne ambiguë</td><td>✅ règle explicite (matière non saisie = exclue)</td></tr>
-          <tr><td>Pas de rang ex-aequo</td><td>✅ géré</td></tr>
-          <tr><td>Journal d'audit</td><td>✅ table <code>audit_log</code></td></tr>
-          <tr><td>Rôles/permissions</td><td>✅ rôles avec restrictions par route</td></tr>
-        </tbody>
-      </table>
+      <h3>10 bis.9 Questions fréquentes</h3>
+      <p><b>Le compte Google est-il le même que l'identifiant de connexion à l'application (chapitre 10.7) ?</b> Non, ce sont deux systèmes distincts et indépendants.</p>
+      <p><b>Le bouton « 🔄 Synchroniser » affiche un message d'échec, que faire ?</b> Vérifier la connexion internet de l'appareil, puis réessayer dans une à deux minutes. Si le message indique une session expirée, appuyer de nouveau sur le bouton pour se reconnecter à Google Drive.</p>
+      <p><b>Le dossier Drive reste vide après connexion, que faire ?</b> Vérifier que le compte Google utilisé dans l'application est bien celui à qui le dossier a été partagé (et non un autre compte Google connecté sur le même appareil/navigateur) — voir « Partagés avec moi » dans Google Drive pour confirmer.</p>
+      <p><b>Puis-je changer le compte Google de l'école ?</b> Oui, mais cela demande de recréer les autorisations (utilisateurs test, partage du dossier) avec le nouveau compte — à faire uniquement avec l'aide de la personne technique.</p>
 
-      <h3>10 bis.11 Limites actuelles, honnêtes</h3>
+      <h3>10 bis.10 Limites actuelles, honnêtes</h3>
       <ul>
-        <li>Tous les modules de l'application sont synchronisés, mais seuls <b>élèves, frais/paiements, notes</b> ont des règles métier serveur avancées (verrouillage, validation). Les autres modules (bibliothèque, discipline, personnel…) utilisent une synchronisation générique par identifiant — suffisante pour un usage normal, mais sans règles métier dédiées pour l'instant.</li>
+        <li>Tant que l'application reste en phase de test Google (moins de 100 utilisateurs), chaque personne doit être ajoutée manuellement comme « utilisateur test » avant de pouvoir se connecter à Google Drive.</li>
+        <li>La connexion à Google Drive peut expirer après un certain temps (généralement autour d'une heure, parfois plus court en phase de test) ; il suffit alors d'appuyer de nouveau sur « 🔄 Synchroniser » pour se reconnecter.</li>
         <li>La fusion de conflits se fait par fiche entière (la plus récente gagne), pas encore un écran d'arbitrage champ par champ.</li>
-        <li>Service gratuit qui « s'endort » après inactivité, d'où le délai évoqué au chapitre 10 bis.4.</li>
+        <li>L'assistant IA intégré (chapitre 10 ter) reposait sur l'ancien serveur central et n'est plus disponible pour l'instant.</li>
       </ul>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Attention à la date d'expiration</b>Sur un plan d'hébergement gratuit, la base de données central peut expirer à une date donnée sauf passage à un plan payant — à anticiper suffisamment à l'avance pour ne pas perdre les données. Se renseigner auprès de la personne technique sur l'échéance en cours.</div>
 
-      <h3>10 bis.12 En cas de problème (aide-mémoire technique)</h3>
+      <h3>10 bis.11 En cas de problème (aide-mémoire)</h3>
       <ul>
-        <li><b>« Serveur injoignable » au login</b> → bascule automatique en mode local, rien n'est perdu ; réessayer plus tard.</li>
-        <li><b>Erreur de contrainte SQL inattendue</b> → utiliser « 1. Initialiser la base » dans <code>admin.html</code> pour réappliquer les scripts SQL les plus récents.</li>
-        <li><b>Mot de passe du compte chef d'établissement perdu</b> → section « 2. Dépannage » dans <code>admin.html</code>.</li>
-        <li>Toujours garder une sauvegarde exportée (chapitre 9) en plus du serveur.</li>
+        <li><b>Page blanche à l'ouverture</b> → vérifier la connexion internet et la batterie de l'appareil ; recharger la page en navigation privée pour écarter tout souci de cache.</li>
+        <li><b>« Accès bloqué : erreur d'autorisation » lors de la connexion Google</b> → le compte Google utilisé n'a pas encore été ajouté comme utilisateur test (10 bis.8), ou le champ d'application Drive n'a pas été correctement configuré côté Google Cloud — contacter la personne technique.</li>
+        <li><b>Dossier Drive vide après synchronisation</b> → vérifier qu'on est connecté, dans l'application comme dans Drive, avec le même compte Google (10 bis.9).</li>
+        <li>Toujours garder une sauvegarde exportée (chapitre 9) en plus de Google Drive.</li>
       </ul>
 
-      <h3>10 bis.13 Comment changer l'adresse e-mail du serveur ?</h3>
-      <p>Il n'existe pas une seule « adresse e-mail du serveur », mais trois adresses e-mail bien distinctes dans l'ensemble de l'application. Avant toute modification, il est important de savoir laquelle on souhaite réellement changer :</p>
-      <table class="guide-table">
-        <thead><tr><th>Adresse e-mail</th><th>À quoi elle sert</th><th>Où la changer</th></tr></thead>
-        <tbody>
-          <tr><td>E-mail de l'école</td><td>Destinataire par défaut des sauvegardes envoyées par e-mail (chapitre 9.3)</td><td>Dans l'application, Paramètres → Informations générales (chapitre 10.1)</td></tr>
-          <tr><td>E-mail du compte Google Drive lié</td><td>Connexion au fichier Google Drive utilisé pour la sauvegarde liée (chapitre 9.1)</td><td>Dans l'application Google Drive elle-même, ou dans les comptes du navigateur/ordinateur — jamais dans les Paramètres de l'application</td></tr>
-          <tr><td>E-mail du compte d'hébergement du serveur central</td><td>Gestion de l'abonnement et de l'administration du service qui fait tourner <code>tekoulo-api.onrender.com</code> (alertes d'expiration, facturation éventuelle, accès au tableau de bord de l'hébergeur)</td><td>Uniquement auprès de la personne technique en charge du serveur, directement sur le site de l'hébergeur (pas dans l'application)</td></tr>
-        </tbody>
-      </table>
-      <p>Pour ce troisième cas — l'adresse e-mail liée à l'hébergement du serveur central — la marche à suivre est la suivante :</p>
-      <ol>
-        <li>Contacter la personne technique en charge du serveur ; elle seule dispose de l'accès au compte d'hébergement.</li>
-        <li>Elle se connecte au tableau de bord de l'hébergeur (le service qui héberge <code>tekoulo-api.onrender.com</code>) avec l'identifiant actuel du compte.</li>
-        <li>Dans les paramètres du compte d'hébergeur (section « Compte » ou « Account Settings »), elle remplace l'ancienne adresse e-mail par la nouvelle, puis confirme l'opération (généralement via un lien de confirmation envoyé à la nouvelle adresse).</li>
-      </ol>
-      <div class="guide-callout attention"><b class="gc-label">⚠️ Ce changement ne touche pas les comptes des utilisateurs</b>Changer l'e-mail du compte d'hébergement ne modifie ni les identifiants (<code>chef1</code>, <code>secretaire1</code>, <code>biologie</code>…), ni les mots de passe, ni les données de l'école. Ces comptes de connexion (chapitre 10 bis.9) ne sont d'ailleurs associés à aucune adresse e-mail : ce sont de simples identifiants internes gérés depuis <code>admin.html</code>.</div>
-      <div class="guide-callout info"><b class="gc-label">ℹ️ Pourquoi cette prudence ?</b>L'adresse e-mail du compte d'hébergement donne accès à l'administration complète du serveur (et parfois à la facturation). Elle ne doit donc être manipulée que par la personne technique désignée, jamais partagée largement.</div>
-
-      <h3>10 bis.14 Transférer l'application d'un téléphone à un ordinateur, ou d'un téléphone à un autre téléphone</h3>
-      <p>Lorsque l'application est connectée au serveur central (chapitre 10 bis.1), « transférer » l'application ne veut pas dire transférer des données : les données (élèves, notes, frais…) restent en permanence sur le serveur central et ne se trouvent jamais uniquement sur un appareil. Changer d'appareil revient donc simplement à installer le fichier de l'application sur le nouvel appareil, puis à se connecter avec un identifiant et un mot de passe valides.</p>
-      <div class="guide-callout astuce"><b class="gc-label">💡 À retenir</b>Le fichier de l'application (la page <code>.html</code>) ne contient que le programme, jamais les données. Le copier sur un autre appareil, quel qu'il soit, ne duplique donc rien : dès la connexion, ce sont toujours les mêmes données du serveur central qui s'affichent.</div>
-      <p><b>D'un téléphone vers un ordinateur :</b></p>
-      <ol>
-        <li>Envoyer le fichier de l'application depuis le téléphone vers l'ordinateur, par le moyen le plus pratique : e-mail à soi-même, Google Drive, WhatsApp (via WhatsApp Web sur l'ordinateur), ou clé USB/câble si l'ordinateur est à proximité.</li>
-        <li>Sur l'ordinateur, récupérer le fichier reçu (pièce jointe, téléchargement Google Drive, etc.) et l'enregistrer dans un dossier facile à retrouver.</li>
-        <li>Ouvrir ce fichier avec un navigateur (Chrome ou Edge de préférence).</li>
-        <li>À l'écran de connexion, saisir l'identifiant et le mot de passe du compte serveur habituel (le même que sur le téléphone).</li>
-      </ol>
-      <p><b>D'un téléphone vers un autre téléphone :</b></p>
-      <ol>
-        <li>Envoyer le fichier de l'application vers le nouveau téléphone par WhatsApp, e-mail, Bluetooth, Google Drive, ou une application de transfert comme Xender (déjà utilisée pour le transfert du fichier local, chapitre 9.6).</li>
-        <li>Sur le nouveau téléphone, ouvrir le fichier reçu avec un navigateur (Chrome de préférence).</li>
-        <li>Se connecter avec le même identifiant et mot de passe du compte serveur que sur l'ancien téléphone.</li>
-      </ol>
-      <p>Dans les deux cas, l'ancien appareil continue de fonctionner normalement si on souhaite le garder également : plusieurs appareils peuvent rester connectés en même temps, chacun se synchronisant avec le même serveur central (chapitre 10 bis.8).</p>
-      <div class="guide-callout info"><b class="gc-label">ℹ️ Et si l'application n'est pas connectée au serveur (mode local uniquement) ?</b>Dans ce cas seulement, les données sont propres à chaque appareil et doivent être transférées manuellement en plus du fichier de l'application, via l'export/import (chapitre 9.2) ou le transfert par Xender (chapitre 9.6).</div>
+      <h3>10 bis.12 Transférer l'application d'un appareil à un autre</h3>
+      <p>L'application étant hébergée en ligne, il n'y a rien à transférer : ouvrir simplement son adresse dans un navigateur sur le nouvel appareil, se connecter avec l'identifiant habituel, puis reconnecter Google Drive avec le même compte Google que sur les autres appareils (10 bis.1). Les données apparaissent après une synchronisation.</p>
+      <div class="guide-callout info"><b class="gc-label">ℹ️ Et sans connexion à Google Drive (mode local uniquement) ?</b>Dans ce cas, les données sont propres à chaque appareil et doivent être transférées manuellement en plus, via l'export/import (chapitre 9.2) ou le transfert par Xender (chapitre 9.6).</div>
     </div>
 
     <div class="guide-chapter" id="g10ter">
       <h2>10 ter. Assistant IA intégré 🤖</h2>
-      <p>Une bulle <b>💬</b> est visible dans la barre supérieure une fois connecté (nécessite d'être relié au serveur central, chapitre 10 bis.1 — non disponible en mode local uniquement). Elle ouvre un panneau de discussion avec un assistant intelligent, capable de répondre à des questions, de rédiger des documents administratifs, et de préparer des cours complets pour les enseignants.</p>
+      <div class="guide-callout attention"><b class="gc-label">⚠️ Actuellement indisponible</b>Ce module reposait sur l'ancien serveur central (Render), désormais désactivé au profit de Google Drive (chapitre 10 bis). La bulle 💬 affiche un message « indisponible » au lieu de planter, mais aucune réponse n'est générée pour l'instant. Le reste de ce chapitre décrit son fonctionnement pour référence, en cas de réactivation future.</div>
+      <p>Une bulle <b>💬</b> est visible dans la barre supérieure une fois connecté. Elle ouvre un panneau de discussion avec un assistant intelligent, capable de répondre à des questions, de rédiger des documents administratifs, et de préparer des cours complets pour les enseignants.</p>
 
       <h3>10 ter.1 Les six modes de l'assistant</h3>
       <table>
@@ -4519,7 +4418,7 @@ function renderGuide(container){
 
       <h3>10 ter.4 Limites à connaître</h3>
       <div class="guide-callout attention"><b class="gc-label">⚠️ Service gratuit à usage limité</b>L'assistant utilise une API d'intelligence artificielle gratuite (Groq), avec un nombre de requêtes par minute limité. En cas d'usage intensif simultané par plusieurs personnes, un message « quota atteint » peut apparaître — il suffit de réessayer une minute plus tard. L'assistant peut écrire du code informatique dans n'importe quel langage, mais ne l'exécute pas.</div>
-      <p>L'assistant nécessite d'être connecté au serveur central (chapitre 10 bis.1) : en mode local uniquement, la bulle indique qu'il n'est pas disponible.</p>
+      <p>L'assistant nécessite l'ancien serveur central, actuellement désactivé (voir l'encadré en début de chapitre) : la bulle indique qu'il n'est pas disponible.</p>
     </div>
 
     <div class="guide-chapter" id="g11n">
@@ -4668,7 +4567,7 @@ function renderGuide(container){
         <li>L'application se déconnecte et revient à l'écran « Choisissez votre espace ».</li>
       </ol>
       <h3>17.3 Fermer le navigateur</h3>
-      <p>Une fois déconnecté, fermez l'onglet ou la fenêtre normalement. Les données restent enregistrées localement (et sur le serveur central si l'application y est reliée) et seront accessibles à la prochaine ouverture, après connexion.</p>
+      <p>Une fois déconnecté, fermez l'onglet ou la fenêtre normalement. Les données restent enregistrées localement (et sur Google Drive si l'application y est reliée) et seront accessibles à la prochaine ouverture, après connexion.</p>
       <div class="guide-callout astuce"><b class="gc-label">💡 Astuce</b>Il n'est pas obligatoire de cliquer sur « Quitter » avant de fermer le navigateur. Ce bouton est surtout utile pour verrouiller l'accès si un autre utilisateur doit utiliser le même appareil.</div>
     </div>
 
@@ -4689,7 +4588,7 @@ function renderGuide(container){
       <h3>Le document imprimé n'a pas le bon en-tête ou le bon signataire.</h3>
       <p>Vérifiez les informations de l'établissement et les responsables du cycle dans le module Paramètres (chapitre 10.1), et le signataire choisi dans le menu déroulant du document (chapitre 8.3).</p>
       <h3>Puis-je utiliser l'application sur plusieurs appareils en même temps ?</h3>
-      <p>Oui, si l'application est connectée au serveur central (chapitre 10 bis) : les données saisies sur un appareil apparaissent automatiquement sur les autres après synchronisation. Sans connexion au serveur, utilisez la sauvegarde/restauration (chapitre 9) ou le transfert via Xender.</p>
+      <p>Oui, si l'application est connectée à Google Drive (chapitre 10 bis) : les données saisies sur un appareil apparaissent automatiquement sur les autres après synchronisation. Sans connexion à Google Drive, utilisez la sauvegarde/restauration (chapitre 9) ou le transfert via Xender.</p>
     </div>
 
     <div class="guide-chapter" id="g19">
@@ -4873,7 +4772,7 @@ function renderParametres(container){
 
       <div class="section-title"><h3><span class="bar"></span>Comptes de connexion par rôle</h3></div>
       <div class="hint-box">Créez ici un compte de connexion personnel (identifiant + mot de passe). Les <b>fonctions proposées changent selon l'espace choisi</b> : Élémentaire et Primaire (Directeur, Directeur adjoint, Comptable, Surveillant général, Enseignant, Fondateur), Collège (Principal, Directeur des études, Comptable, Conseiller à l'orientation, Surveillant général, Professeur collège, Fondateur), Lycée (Proviseur, Censeur, Comptable, Chargé à l'orientation, Surveillant, Professeur lycée, Fondateur). Chaque personne se connecte alors avec son propre identifiant, et ne voit dans le menu que les modules correspondant à son rôle — plutôt que de partager le mot de passe administrateur unique.</div>
-      <div class="guide-callout attention" style="margin-bottom:14px;"><b class="gc-label">⚠️ Ces comptes ne synchronisent pas automatiquement entre appareils</b>Un compte créé ici (stocké uniquement sur cet appareil) permet de se connecter et de restreindre l'accès aux modules, mais n'est <b>pas reconnu par le serveur central</b>. Résultat : après connexion avec ce type de compte, le bouton « 🔄 Synchroniser » du tableau de bord affichera toujours <i>« Serveur en ligne, mais ce compte ne s'y est pas connecté »</i>, même si le serveur fonctionne normalement. Pour qu'une personne profite à la fois de son propre identifiant <b>et</b> de la synchronisation multi-appareils, son compte doit être créé <b>sur le serveur central</b> (fichier <code>admin.html</code>, chapitre 10 bis.9 du Guide) — pas seulement ici.</div>
+      <div class="guide-callout attention" style="margin-bottom:14px;"><b class="gc-label">⚠️ Ces comptes ne synchronisent pas à eux seuls entre appareils</b>Un compte créé ici (stocké uniquement sur cet appareil) permet de se connecter et de restreindre l'accès aux modules, mais ne synchronise rien par lui-même. Pour qu'une personne profite à la fois de son propre identifiant <b>et</b> de la synchronisation multi-appareils, elle doit en plus se connecter avec son propre compte Google via « 🔗 Connecter Google Drive » sur le tableau de bord (chapitre 10 bis) — ce compte Google doit avoir été autorisé au préalable par le Fondateur.</div>
       <form class="entity-form" id="form-compte-role" onsubmit="return false;">
         <div class="form-grid">
           <div class="field"><label>Espace (cycle) autorisé</label>
@@ -13476,7 +13375,7 @@ function coursRepartitionStatut(texte, estErreur){
 async function coursRepartitionAnalyser(){
   if(!coursProgrammeFichier){ toast('Importez d\'abord un fichier de répartition.', true); return; }
   if(!TEKOULO_API_URL || !TEKOULO_TOKEN){
-    coursRepartitionStatut('Analyse indisponible hors connexion au serveur central.', true);
+    coursRepartitionStatut('Analyse indisponible pour le moment (assistant IA désactivé, voir Guide chapitre 10 ter).', true);
     return;
   }
   const btn = document.getElementById('cours-repartition-analyser-btn');
@@ -14324,7 +14223,7 @@ async function assistantEnvoyer(){
 // automatique depuis la répartition. Renvoie toujours {ok, reponse|error}.
 async function assistantAppelAPI(message, pieceJointe, mode){
   if(!TEKOULO_API_URL || !TEKOULO_TOKEN){
-    return {ok:false, error:"L'assistant nécessite d'être connecté au serveur central (pas disponible en mode local hors-ligne)."};
+    return {ok:false, error:"L'assistant IA est actuellement désactivé (voir Guide, chapitre 10 ter)."};
   }
   const modeEffectif = mode || assistantMode;
   // Les modes « Créer un cours » et « Projets » envoient un prompt long et autonome
